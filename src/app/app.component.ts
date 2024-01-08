@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { InfoDemoComponent } from './basic-demo/info-demo.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `<app-info-demo />`,
+  imports: [InfoDemoComponent],
 })
-export class AppComponent {
-  title = 'ng-di-demo';
-}
+export class AppComponent {}
